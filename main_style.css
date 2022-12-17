@@ -1,0 +1,316 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url('Pacifico-Regular.eot');
+    src: url('Pacifico-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Pacifico-Regular.woff2') format('woff2'),
+        url('Pacifico-Regular.woff') format('woff'),
+        url('Pacifico-Regular.ttf') format('truetype'),
+        url('Pacifico-Regular.svg#Pacifico-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/***** General CSS ******/
+section {
+    display: inline-block;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0px 0px;
+}
+
+/***** Splash Screen ******/
+#splash_main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: url(../image/splash_bg.png) 50% 50% no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#splash_main h1 {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 132px;
+    color: #FFFFFF;
+}
+
+#splash_main .footer_below {
+    display: inline-block;
+    width: 100%;
+    padding: 40px 40px;
+}
+
+#splash_main .footer_below h2 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#splash_main .footer_below a.gray_btn {
+    background: #29292B;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 10px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+#splash_main .footer_below a.blue_btn {
+    background: #5D5FEF;
+    border-radius: 10px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/***** Login Screen ******/
+#login_main {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+
+#login_main::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    background: url(../image/curve_blank.png) 50% 50% no-repeat;
+    background-size: cover;
+    z-index: -1;
+    height: 180px;
+}
+
+#login_main .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 35px;
+}
+
+#login_main .header h3 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    color: #000000;
+    margin: 0px;
+}
+
+.login_form {
+    padding: 0px 25px;
+    padding-top: 25px;
+}
+
+.login_form form label {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.login_form form input {
+    font-family: 'Nunito';
+    background: #F7F7FC;
+    border: 1px solid rgba(93, 95, 239, 0.3);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    height: 50px;
+    padding-left: 40px;
+}
+
+.login_form form .mb-3 {
+    position: relative;
+}
+
+.login_form form img {
+    position: absolute;
+    top: 45px;
+    left: 12px;
+}
+
+.login_form form a {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #5D5FEF;
+    float: right;
+}
+
+.login_form form button {
+    background: #5D5FEF;
+    border-radius: 10px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    height: 50px;
+    line-height: 25px;
+    color: #FFFFFF;
+    display: inline-block;
+    width: 100%;
+    border: none;
+    margin-top: 30px;
+}
+
+.login_form form span {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #828282;
+    width: 100%;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.login_form form span a {
+    color: #5D5FEF;
+    margin-left: 5px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/***** Sign Up Screen ******/
+.login_form.signup_set {
+
+}
+
+.login_form.signup_set form .col-6.mb-3 img {
+    left: 23px;
+}
+
+.login_form.signup_set form img {
+    position: absolute;
+    top: 45px;
+    left: 12px;
+}
+
+.login_form.signup_set form button img {
+    position: relative;
+    top: -1px;
+    left: 3px;
+}
+
+#login_main.signup_crv::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    background: url(../image/curve_1st.png) 50% 50% no-repeat;
+    background-size: cover;
+    z-index: -1;
+    height: 180px;
+}
+
+span.empty_space {
+    height: 100px;
+    display: inline-block;
+}
+
+/***** Complete Profile Screen *******/
+.compete_profile {
+    padding: 0px 20px;
+}
+
+#login_main.profilr_crv::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    background: url(../image/curve_2sn.png) 50% 50% no-repeat;
+    background-size: cover;
+    z-index: -1;
+    height: 180px;
+}
+
+.compete_profile p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.compete_profile .opt {
+    background: #F7F7FC;
+    border: 1px solid rgba(93, 95, 239, 0.3);
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px 15px;
+}
+
+.compete_profile .opt img {
+
+}
+
+.compete_profile .opt p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: #29292B;  
+    margin-top: 5px;  
+    margin-bottom: 0px;
+}
